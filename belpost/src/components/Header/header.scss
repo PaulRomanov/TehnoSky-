@@ -8,21 +8,15 @@
 	font-size: 30px;
 	line-height: 41px;
 	letter-spacing: 0.02em;
-	
 	display: flex;
 	justify-content: space-between;
 }
 
-.header-wrapper{
+.header-conteiner{
 	display: flex;
 }
 
-.header__time, .header__weather{
-	margin-right: 53px;
-}
-
-
-.header__date{
+.header-date{
 	width: 480px;
 	text-align: right;
 }
