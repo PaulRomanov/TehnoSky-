@@ -1,11 +1,10 @@
 import React from 'react';
 import TimeNow from '../TimeNow/TimeNow';
 import './header.scss';
-import WeatherIcon from './../WeatherIcon/WeatherIcon';
+import WeatherIcon from '../WeatherIcon/WeatherIcon';
 import Data from '../Data/Data';
 
 const Header = () => {
-
   return (
     <div className="header">
       <div className="header-conteiner">

@@ -1,11 +1,9 @@
 import { Route, Switch, useLocation } from 'react-router-dom';
-import { CSSTransition, TransitionGroup } from 'react-transition-group';
-import ContentAbout from '../../components/ContentAbout/ContentAbout';
+import { TransitionGroup } from 'react-transition-group';
 import About from '../About/About';
 import MainPage from '../MainPage/MainPage';
 import NotFound from '../NotFound/NotFound';
-import AdministrativePage from './../AdministrativePage/AdministrativePage';
-
+import AdministrativePage from '../AdministrativePage/AdministrativePage';
 
 const PagesAll = () => {
   const location = useLocation();

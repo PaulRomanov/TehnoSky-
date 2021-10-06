@@ -17,12 +17,14 @@
     "@types/react-router-dom": "^5.1.8",
     "@types/react-transition-group": "^4.4.3",
     "i18next": "^21.2.4",
+    "prop-type": "0.0.1",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-i18next": "^9.0.10",
     "react-router-dom": "^5.3.0",
     "react-transition-group": "^4.4.2",
-    "styled-components": "^5.3.0"
+    "styled-components": "^5.3.0",
+    "uuid": "^8.3.2"
   },
   "devDependencies": {
     "@babel/core": "^7.14.6",
@@ -34,6 +36,7 @@
     "@pmmmwh/react-refresh-webpack-plugin": "^0.4.3",
     "@types/react": "^17.0.14",
     "@types/react-dom": "^17.0.9",
+    "@types/uuid": "^8.3.1",
     "@typescript-eslint/eslint-plugin": "^4.28.3",
     "@typescript-eslint/parser": "^4.28.3",
     "babel-loader": "^8.2.2",
@@ -45,7 +48,7 @@
     "eslint-plugin-import": "^2.23.4",
     "eslint-plugin-jsx-a11y": "^6.4.1",
     "eslint-plugin-prettier": "^3.4.0",
-    "eslint-plugin-react": "^7.24.0",
+    "eslint-plugin-react": "^7.26.1",
     "eslint-plugin-react-hooks": "^4.2.0",
     "eslint-webpack-plugin": "^3.0.1",
     "html-webpack-plugin": "^5.3.2",

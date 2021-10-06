@@ -1,5 +1,4 @@
 import React, { FC } from 'react';
-import PropTypes from 'prop-types';
 import './button.scss';
 import administrative from '../../assets/administrative.svg';
 import management from '../../assets/management.svg';
@@ -24,15 +23,18 @@ const iconSvg = {
 
 const Button: FC<Props> = ({ label, onClick, className, svgItem }) => {
   return (
-    <button
-      type="button"
-      className={className}
-      onClick={onClick}
-    >
+    <button type="button" className={className} onClick={onClick}>
       <div className="btn_lable">{label}</div>
-      <img className='btn__img' src={iconSvg[svgItem]} alt='svg' />
+      <img className="btn__img" src={iconSvg[svgItem]} alt="svg" />
     </button>
   );
+};
+
+Button.defaultProps = {
+  label: '',
+  onClick: undefined,
+  className: '',
+  svgItem: '',
 };
 
 export default Button;
