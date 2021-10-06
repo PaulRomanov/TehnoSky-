@@ -1,6 +1,6 @@
-import React from "react";
+import React, { Component } from "react";
 
-export default class WeatherIcon extends React.Component {
+export default class WeatherIcon extends Component {
   state = {
     data: {
       weather: [
