@@ -1,0 +1,12 @@
+.contentMainPage_wrapper {
+	min-height: 1129px;
+	background-image: url(../../assets/background1.png);
+	background-repeat: no-repeat;
+}
+
+.main {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-gap: 35px;
+}
+

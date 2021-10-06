@@ -1,16 +1,21 @@
 import './styles.scss';
-import Header from './components/Header/Header';
-import Slider from './components/Slider/Slider';
-import Footer from './components/Footer/Footer';
+import { BrowserRouter as Router } from 'react-router-dom';
+import PagesAll from './pages/PagesAll/PagesAll';
+
 
 export const App = () => {
   return (
-    <>
-      <Header />
-      <Slider />
-      <Footer />
-    </>
+    <Router>
+      <div className="app">
+        <PagesAll />
+      </div>
+    </Router>
   );
 };
 
 export default App;
+
+
+      
+    
+
