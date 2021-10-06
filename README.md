@@ -1,1 +1,1 @@
-https://paulromanov.github.io/TehnoSky
+TehnoSky
