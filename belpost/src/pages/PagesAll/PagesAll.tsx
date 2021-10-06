@@ -1,6 +1,10 @@
-import { BrowserRouter as Route, Switch, useLocation } from 'react-router-dom';
+import { Route, Switch, useLocation } from 'react-router-dom';
 import { CSSTransition, TransitionGroup } from 'react-transition-group';
+import ContentAbout from '../../components/ContentAbout/ContentAbout';
+import About from '../About/About';
 import MainPage from '../MainPage/MainPage';
+import NotFound from '../NotFound/NotFound';
+import AdministrativePage from './../AdministrativePage/AdministrativePage';
 
 
 const PagesAll = () => {
@@ -9,25 +13,26 @@ const PagesAll = () => {
   return (
     <div className="pages">
       <TransitionGroup>
-        <CSSTransition timeout={300} classNames="page" key={location.key}>
-          <Switch location={location}>
-            <Route exact path="/">
-              <MainPage />
-            </Route>
-            {/* <Route exact path="/about">
-              <About />
-            </Route>
-            <Route path="/details/:title">
-              <Details />
-            </Route>
-            <Route path="/error">
-              <NotFound />
-            </Route>
-            <Redirect to="/error">
-              <NotFound />
-            </Redirect> */}
-          </Switch>
-        </CSSTransition>
+        <Switch location={location}>
+          <Route exact path="/">
+            <MainPage />
+          </Route>
+          <Route exact path="/administrative">
+            <AdministrativePage />
+          </Route>
+          <Route exact path="/management">
+            <NotFound />
+          </Route>
+          <Route exact path="/appointmentSchedule">
+            <NotFound />
+          </Route>
+          <Route exact path="/structure">
+            <NotFound />
+          </Route>
+          <Route exact path="/ContentAbout">
+            <About />
+          </Route>
+        </Switch>
       </TransitionGroup>
     </div>
   );
