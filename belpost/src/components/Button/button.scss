@@ -1,0 +1,25 @@
+.button {
+  position: relative;
+  width: 300px;
+  height: 250px;
+  padding: 0 20px 45px 20px;
+  background-color: #fff;
+  border-radius: 45px;
+  cursor: pointer;
+}
+
+.btn_lable {
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 26px;
+  text-align: right;
+  text-transform: uppercase;
+  color: #2b2e2d;
+}
+
+.btn__img{
+	position: absolute;
+	bottom: 35px;
+	left: 25px;
+	user-select: none;
+}
