@@ -1,1 +1,1 @@
-https://paulromanov.github.io/TehnoSky/
+https://paulromanov.github.io/TehnoSky
