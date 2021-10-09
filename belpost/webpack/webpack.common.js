@@ -3,6 +3,9 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CopyPlugin = require('copy-webpack-plugin');
 
 module.exports = {
+  performance: {
+    hints: false
+  },
   entry: path.resolve(__dirname, '..', './src/index.tsx'),
   resolve: {
     extensions: ['.tsx', '.ts', '.js'],
@@ -48,8 +51,4 @@ module.exports = {
       patterns: [{ from: path.resolve(__dirname, '..', './src/assets'), to: 'assets' }],
     }),
   ],
-  performance: {
-    maxEntrypointSize: 512000,
-    maxAssetSize: 512000
-}
 };
