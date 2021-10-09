@@ -48,4 +48,8 @@ module.exports = {
       patterns: [{ from: path.resolve(__dirname, '..', './src/assets'), to: 'assets' }],
     }),
   ],
+  performance: {
+    maxEntrypointSize: 512000,
+    maxAssetSize: 512000
+}
 };
