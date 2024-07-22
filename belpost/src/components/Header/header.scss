@@ -1,0 +1,22 @@
+.header{
+	padding: 18px 60px 14px 60px;
+	background: #009DE9;
+	color: #fff;
+	font-family: Open Sans;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 30px;
+	line-height: 41px;
+	letter-spacing: 0.02em;
+	display: flex;
+	justify-content: space-between;
+}
+
+.header-conteiner{
+	display: flex;
+}
+
+.header-date{
+	width: 480px;
+	text-align: right;
+}
